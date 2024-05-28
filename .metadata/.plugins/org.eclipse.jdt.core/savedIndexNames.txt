@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+F:\2024\g119\g119FileApiServices\fileStanBy_v.1.0\.metadata\.plugins\org.eclipse.jdt.core
+921979479.index

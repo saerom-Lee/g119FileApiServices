@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+F:\2024\g119\g119FileApiServices\fileStanBy_v.1.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4111571121.index
+\g119FileApiServices\src\main\java

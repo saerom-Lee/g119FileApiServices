@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.6</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>kr.nlip</groupId>
+	<artifactId>g119FileApiServices</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>g119FileApiServices</name>
+	<packaging>jar</packaging>
+	<description>nlip g119 file trans project for Spring Boot</description>
+	<properties>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<java.version>1.8</java.version>
+		<webcontent-dir>${project.basedir}\src\main\webapp\WEB-INF\lib</webcontent-dir>
+	</properties>
+	
+		<repositories>
+		  <repository>
+		    <id>oracle</id>
+		    <name>ORACLE JDBC Repository</name>
+		    <url>http://www.datanucleus.org/downloads/maven2/</url>
+		  </repository>
+		  <repository>
+		      <id>GeoSolutions</id>
+		      <url>http://maven.geo-solutions.it/</url>
+		   </repository>
+		</repositories>
+		
+	<dependencies>
+		<!-- c3p0-0.9.5.2 add -->
+		<dependency>
+			<groupId>c3p0-0.9.5.2</groupId>
+			<artifactId>c3p0-0.9.5.2</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\c3p0-0.9.5.2.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-fileupload-1.3.1 add -->
+		<dependency>
+			<groupId>commons-fileupload-1.3.1</groupId>
+			<artifactId>commons-fileupload-1.3.1</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-fileupload-1.3.1.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-codec-1.10 add -->
+		<dependency>
+			<groupId>commons-codec-1.10</groupId>
+			<artifactId>commons-codec-1.10</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-codec-1.10.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-codec-1.10 add -->
+		<dependency>
+			<groupId>commons-httpclient-3.1</groupId>
+			<artifactId>commons-httpclient-3.1</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-httpclient-3.1.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-io-2.11.0 add -->
+		<dependency>
+			<groupId>commons-io-2.11.0</groupId>
+			<artifactId>commons-io-2.11.0</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-io-2.11.0.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-logging-1.2-javadoc add -->
+		<dependency>
+			<groupId>commons-logging-1.2-javadoc</groupId>
+			<artifactId>commons-logging-1.2-javadoc</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-logging-1.2-javadoc.jar</systemPath>
+		</dependency>
+		
+		<!-- commons-logging-1.2 add -->
+		<dependency>
+			<groupId>commons-logging-1.2</groupId>
+			<artifactId>commons-logging-1.2</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\commons-logging-1.2.jar</systemPath>
+		</dependency>
+		
+		<!-- geoserver-manager-1.7.0 add -->
+		<dependency>
+		    <groupId>it.geosolutions</groupId>
+		    <artifactId>geoserver-manager</artifactId>
+		    <version>1.7.0</version>
+		 </dependency>
+		
+		<!-- jaxen-1.1.6 add -->
+		<dependency>
+			<groupId>jaxen-1.1.6</groupId>
+			<artifactId>jaxen-1.1.6</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\jaxen-1.1.6.jar</systemPath>
+		</dependency>
+		
+		<!-- jdom-1.1 add -->
+		<dependency>
+			<groupId>jdom-1.1</groupId>
+			<artifactId>jdom-1.1</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\jdom-1.1.jar</systemPath>
+		</dependency>
+		
+		<!-- jts-1.13 add -->
+		<dependency>
+			<groupId>jts-1.13</groupId>
+			<artifactId>jts-1.13</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\jts-1.13.jar</systemPath>
+		</dependency>
+		
+		<!-- ojdbc7-12.1.0.2.0 add -->
+		<dependency>
+			<groupId>ojdbc7-12.1.0.2.0</groupId>
+			<artifactId>ojdbc7-12.1.0.2.0</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\ojdbc7-12.1.0.2.0.jar</systemPath>
+		</dependency>
+		
+		<!-- quartz-2.3.0-SNAPSHOT add -->
+		<dependency>
+			<groupId>quartz-2.3.0-SNAPSHOT</groupId>
+			<artifactId>quartz-2.3.0-SNAPSHOT</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\quartz-2.3.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<!-- quartz-jobs-2.3.0-SNAPSHOT add -->
+		<dependency>
+			<groupId>quartz-jobs-2.3.0-SNAPSHOT</groupId>
+			<artifactId>quartz-jobs-2.3.0-SNAPSHOT</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\quartz-jobs-2.3.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<!-- slf4j-api-1.7.30 add -->
+		<dependency>
+			<groupId>slf4j-api-1.7.30</groupId>
+			<artifactId>slf4j-api-1.7.30</artifactId>
+			<version>0.1</version>
+			<scope>system</scope>
+			<systemPath>${webcontent-dir}\slf4j-api-1.7.30.jar</systemPath>
+		</dependency>
+		
+        <!-- @Inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+        
+        <!-- jsp 라이브러리 , jsp에서 톰캣을 사용할 수 있는 라이브러리-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- jstl 라이브러리 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        
+        <!-- 오라클 라이브러리 -->
+        <dependency>
+		    <groupId>oracle</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.3</version>
+		</dependency>
+		        
+        <!-- 스프링 부트용 jdbc 라이브러리 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        
+        <!-- mybatis와 spring를 연결해서 쓸 수 있는 라이브러리 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency> -->
+    
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-resources-plugin</artifactId>
+		    <version>2.4.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jar-plugin</artifactId>
+		    <version>3.1.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20160810</version>
+		</dependency>
+		
+    </dependencies>
+
+
+	<!-- <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                	<mainClass> kr.nlip.sftm.G119FileApiServicesApplication</mainClass>
+            	</configuration>
+			</plugin>
+		</plugins>
+	</build> -->
+	<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                	<mainClass> kr.nlip.sftm.G119FileApiServicesApplication</mainClass>
+            	</configuration>
+			</plugin>
+    </plugins>
+  </build>
+
+</project>

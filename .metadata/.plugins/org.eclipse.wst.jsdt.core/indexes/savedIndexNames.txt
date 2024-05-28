@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+F:\2024\g119\g119FileApiServices\fileStanBy_v.1.0\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+732482770.index
+1035929478.index
+921979479.index
+4182686278.index
+1629189814.index
